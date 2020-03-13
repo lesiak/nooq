@@ -1,6 +1,6 @@
 namespace Nooq
 {
-    public interface SelectField<T>: SelectFieldOrAsterisk
+    public interface SelectField<T>: SelectFieldOrAsterisk, Named
     {
         
     }

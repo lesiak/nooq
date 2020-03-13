@@ -1,7 +1,11 @@
 namespace Nooq
 {
-    public interface Field<T>
+    public interface Field
     {
         
+    }
+
+    public interface Field<T>: Field, SelectField<T>
+    {
     }
 }
