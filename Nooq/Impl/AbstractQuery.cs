@@ -6,5 +6,10 @@ namespace Nooq.Impl
         {
             throw new System.NotImplementedException();
         }
+
+        public virtual bool isExecutable()
+        {
+            return true;
+        }
     }
 }
