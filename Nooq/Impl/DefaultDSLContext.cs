@@ -1,10 +1,10 @@
 namespace Nooq.Impl
 {
-    public class DefaultDSLContext: DSLContext
+    public class DefaultDSLContext : AbstractScope, DSLContext
     {
         public SelectWhereStep<R> selectFrom<R>(Table<R> table) where R : class, Record
         {
-            throw new System.NotImplementedException();
+            return new SelectImpl<R>(configuration(), null).from(table);
         }
 
         public R fetchOne<R>(Table<R> table, Condition condition) where R : class, Record

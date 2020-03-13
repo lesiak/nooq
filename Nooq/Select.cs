@@ -1,6 +1,6 @@
 namespace Nooq
 {
-    public interface Select<R> where R : Record
+    public interface Select<R> : ResultQuery<R>, TableLike<R> where R : Record
     {
     }
 }
