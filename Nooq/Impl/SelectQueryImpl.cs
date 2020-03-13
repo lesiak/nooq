@@ -1,6 +1,6 @@
 namespace Nooq.Impl
 {
-    public class SelectQueryImpl<R> : SelectQuery<R> where R : Record
+    public class SelectQueryImpl<R> : AbstractResultQuery<R>, SelectQuery<R> where R : Record
     {
         private readonly TableList from;
 

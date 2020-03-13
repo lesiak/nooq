@@ -37,5 +37,10 @@ namespace Nooq.Impl
             getQuery().addFrom(table);
             return this;
         }
+        
+        public Cursor<R> fetchLazy() {
+            return getQueryDelegate().fetchLazy();
+        }
+
     }
 }

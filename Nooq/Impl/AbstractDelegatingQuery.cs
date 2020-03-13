@@ -12,5 +12,9 @@ namespace Nooq.Impl
         public Q getQueryDelegate() {
             return queryDelegate;
         }
+        
+        public int execute() {
+            return queryDelegate.execute();
+        }
     }
 }
